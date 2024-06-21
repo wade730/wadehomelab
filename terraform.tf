@@ -12,7 +12,7 @@ terraform {
   backend "s3" {
     bucket         = "chummbucket"
     key            = "terraform-state"
-    # dynamodb_table = "terraform-state-lock-dynamo"
+    dynamodb_table = "terraform-state-lock-dynamo"
     encrypt        = true
     region         = "us-east-1"
   }
