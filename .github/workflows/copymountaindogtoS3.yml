@@ -21,4 +21,4 @@ jobs:
         aws-region: us-east-2
 
     - name: Sync files to S3
-      run: aws s3 sync mountaindog.it/ s3://www.mountaingdog.it --delete
+      run: aws s3 sync www.mountaindog.it/ s3://www.mountaingdog.it --delete
